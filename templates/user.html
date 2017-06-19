@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ user.username }}</title>
+  </head>
+<body>
+  <h2>{{ user.username }}</h2>
+  <p><em>{{ user.fullname }}</em></p>
+  <p><em>Date of Birth: {{ user.dob.strftime("%d/%m/%Y") }}</em></p>
+  <hr>
+  <p>{{ user.bio }}</p>
+  <blockquote><p><strong>{{ user.quote }}</strong> - {{ user.fullname }}</p></blockquote>
+</body>
+</html>
