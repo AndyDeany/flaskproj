@@ -1,4 +1,6 @@
 import datetime
+import re
+
 
 class User(object):
     """Class for users on the webapp"""
@@ -13,7 +15,7 @@ class User(object):
                  username,
                  forename,
                  surname,
-                 dob,   # Should be a tuple (Y, M, D)
+                 dob,   # Should be a string YYYY/MM/DD
                  bio="Bio not found.",
                  quote="No quote found.",
                  profile_colour="478dff"):
@@ -36,5 +38,6 @@ class User(object):
         self.surname = surname.capitalize()
         self.fullname = self.forename + " " + self.surname
 
-    def set_dob(self, dob_tuple):
-        self.dob = datetime.date(*dob_tuple)
+    def set_dob(self, dob_string):
+        """Set dob to a datetime.date object dependent on the given string"""
+        self.dob = datetime.date(*map(int, re.split(r"[-/ \.]", dob_string)))

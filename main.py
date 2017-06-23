@@ -8,14 +8,14 @@ app = flask.Flask(__name__)
 
 User(username="svesar99",
      forename="sara", surname="svedlund",
-     dob=(1999, 1, 15),
+     dob="1999/01/15",
      bio="The cutest kitty in all the land.",
      quote="Meow",
      profile_colour="ff21f7")
 
 User(username="andydeany",
      forename="andrew", surname="dean",
-     dob=(1998, 2, 26),
+     dob="1998/02/26",
      bio="",
      quote="I'm a coder",
      profile_colour="d142f4")
