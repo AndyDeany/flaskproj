@@ -13,6 +13,13 @@ User(username="svesar99",
      quote="Meow",
      profile_colour="ff21f7")
 
+User(username="andydeany",
+     forename="andrew", surname="dean",
+     dob=(1998, 2, 26),
+     bio="",
+     quote="I'm a coder",
+     profile_colour="d142f4")
+
 
 @app.route("/user/<username>")
 @app.route("/u/<username>")
