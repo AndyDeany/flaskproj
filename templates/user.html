@@ -9,11 +9,13 @@
 </head>
 
 <body>
-  <h2>{{ user.username }}</h2>
-  <p><em>{{ user.fullname }}</em></p>
-  <p><em>Date of Birth: {{ user.dob.strftime("%d/%m/%Y") }}</em></p>
-  <hr>
-  <p>{{ user.bio }}</p>
-  <blockquote><p><strong>{{ user.quote }}</strong> - {{ user.fullname }}</p></blockquote>
+  <div class="wrapper"><div id="profile" style="background-color: #{{ user.profile_colour }}">
+    <h2>{{ user.username }}</h2>
+    <p><em>{{ user.fullname }}</em></p>
+    <p><em>Date of Birth: {{ user.dob.strftime("%d/%m/%Y") }}</em></p>
+    <hr>
+    <p>{{ user.bio }}</p>
+    <blockquote><p><strong>{{ user.quote }}</strong> - {{ user.fullname }}</p></blockquote>
+  </div></div>
 </body>
 </html>
