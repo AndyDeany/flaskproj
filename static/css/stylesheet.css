@@ -1,9 +1,16 @@
-* {font-family: "Roboto", sans-serif;}
+* {
+    font-family: "Roboto", sans-serif;
+}
 
 /* .wrapper class for centering divs of any size */
-div.wrapper {text-align: center;}
+div.wrapper {
+    text-align: center;
+}
 
-div.wrapper div {display: inline-block; text-align: initial}
+div.wrapper div {
+    display: inline-block;
+    text-align: initial
+}
 
 /* user.html (user profile page) */
 div#profile {
