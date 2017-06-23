@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper"><div id="profile" style="background-color: #{{ user.profile_colour }}">
     <h2>{{ user.username }}</h2>
-    <p><em>{{ user.fullname }}</em></p>
+    <p>{{ user.fullname }}</p>
     <p>Date of Birth: {{ user.dob.strftime("%d/%m/%Y") }}</p>
     <p>{{ user.bio }}</p>
     <br>
