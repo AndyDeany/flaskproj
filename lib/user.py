@@ -15,12 +15,15 @@ class User(object):
                  surname,
                  dob,   # Should be a tuple (Y, M, D)
                  bio="Bio not found.",
-                 quote="No quote found."):
+                 quote="No quote found.",
+                 profile_colour="478dff"):
         self.username = username
         self.set_name(forename, surname)
         self.set_dob(dob)
         self.bio = bio
         self.quote = quote
+
+        self.profile_colour = profile_colour
 
         self.users.append(self)
 
