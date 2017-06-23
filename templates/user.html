@@ -14,7 +14,9 @@
     <p><em>{{ user.fullname }}</em></p>
     <p><em>Date of Birth: {{ user.dob.strftime("%d/%m/%Y") }}</em></p>
     <p>{{ user.bio }}</p>
-    <blockquote><p><em>{{ user.quote }}</em> - {{ user.fullname }}</p></blockquote>
+    <br>
+    <blockquote><p><em>{{ user.quote }}</em></p></blockquote>
+    <p style="text-align: right"> - {{ user.fullname }}</p>
   </div></div>
 </body>
 </html>
