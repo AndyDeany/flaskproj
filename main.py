@@ -10,7 +10,8 @@ User(username="svesar99",
      forename="sara", surname="svedlund",
      dob=(1999, 1, 15),
      bio="The cutest kitty in all the land.",
-     quote="Meow")
+     quote="Meow",
+     profile_colour="ff21f7")
 
 
 @app.route("/user/<username>")
