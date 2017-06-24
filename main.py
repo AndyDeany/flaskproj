@@ -1,3 +1,5 @@
+import json
+
 import flask
 
 from lib.user import User
@@ -5,30 +7,9 @@ from lib.user import User
 
 app = flask.Flask(__name__)
 
-
-users = [
-    {
-        "username": "svesar99",
-        "forename": "Sara",
-        "surname": "Svedlund",
-        "dob": "1999/01/15",
-        "bio": "The cutest kitty in all the land.",
-        "quote": "Meow",
-        "profile_colour": "ff21f7"
-    },
-    {
-        "username": "andydeany",
-        "forename": "Andrew",
-        "surname": "Dean",
-        "dob": "1998/02/26",
-        "bio": "",
-        "quote": "I'm a coder",
-        "profile_colour": "d142f4"
-    }
-]
-
-for user in users:
-    User(**user)
+with open("assets/users.json") as users_json:
+    for user in json.load(users_json):
+        User(**user)
 
 
 @app.route("/user/<username>")
