@@ -12,6 +12,10 @@ with open("assets/users.json") as users_json:
         User(**user)
 
 
+@app.route("/")
+def index():
+    return "Hello, World!"
+
 @app.route("/user/<username>")
 @app.route("/u/<username>")
 def profile(username):
