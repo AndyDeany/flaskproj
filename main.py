@@ -17,7 +17,7 @@ with open("assets/users.json") as users_json:
 def profile(username):
     user = User.find(username)
     if user is None:
-        return "User '%s' not found." % username
+        return f"User '{username}' not found."
     else:
         return render_template("user.html", user=user)
 
