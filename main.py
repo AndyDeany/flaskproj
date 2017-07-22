@@ -1,11 +1,11 @@
 import json
 
-import flask
+from flask import Flask, render_template
 
 from lib.user import User
 
 
-app = flask.Flask(__name__)
+app = Flask(__name__)
 
 with open("assets/users.json") as users_json:
     for user in json.load(users_json):
@@ -19,7 +19,7 @@ def profile(username):
     if user is None:
         return "User '%s' not found." % username
     else:
-        return flask.render_template("user.html", user=user)
+        return render_template("user.html", user=user)
 
 
 if __name__ == "__main__":
