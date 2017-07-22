@@ -1,6 +1,7 @@
 [
     {
         "username": "svesar99",
+        "password": "kittu",
         "forename": "Sara",
         "surname": "Svedlund",
         "dob": "1999/01/15",
@@ -10,6 +11,7 @@
     },
     {
         "username": "andydeany",
+        "password": "randu",
         "forename": "Andrew",
         "surname": "Dean",
         "dob": "1998/02/26",

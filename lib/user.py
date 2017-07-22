@@ -13,6 +13,7 @@ class User(object):
 
     def __init__(self,
                  username,
+                 password,
                  forename,
                  surname,
                  dob,   # Should be a string YYYY/MM/DD
@@ -20,6 +21,7 @@ class User(object):
                  quote="No quote found.",
                  profile_colour="478dff"):
         self.username = username
+        self.password = password
         self.set_name(forename, surname)
         self.set_dob(dob)
         self.bio = bio
